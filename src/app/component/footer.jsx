@@ -24,7 +24,7 @@ export function FooterWithSocialLinks() {
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2 ">
         <div className="mt-8">
             <a href="">
-                <img src="../../../../public/logoyt.png" alt="" width={70} height={70}/>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png?20220706172052" alt="" width={70} height={70}/>
             </a>
             <Typography variant="paragraph" className="mt-4 lg:pe-32 text-white">
             Movies Watch You is a website that provides several recent and past films, with various genres 
