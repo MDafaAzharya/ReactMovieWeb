@@ -14,7 +14,7 @@ const Card = () => {
   const [selectedGenre, setSelectedGenre] = useState();
   const [currentPage, setCurrentPage] = useState(1);
   const [showCard, setShowCard] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
   const handleSearch = async () => {
@@ -28,7 +28,6 @@ const Card = () => {
     }
   };
 
-  
 
   useEffect(() => {
     const apiKey = import.meta.env.VITE_API_KEY;
@@ -110,7 +109,12 @@ const Card = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button onClick={handleSearch} className="bg-pink-300 rounded-md w-8 text-white px-2 hover:opacity-80 "><AiOutlineSearch/></button>
+        <button
+          onClick={handleSearch}
+          className="bg-pink-300 rounded-md w-8 text-white px-2 hover:opacity-80 "
+        >
+          <AiOutlineSearch />
+        </button>
       </div>
     );
   };
@@ -179,7 +183,7 @@ const Card = () => {
     };
     return (
       <div className="flex justify-center gap-10 py-5">
-        <ul className="flex items-center gap-10">
+        <ul className="flex items-center lg:gap-10 gap-4">
           <li
             className={`bg-pink-300 text-white rounded-full p-2 h-8 w-8 ${
               currentPage === 1
