@@ -33,7 +33,7 @@ const MovieDetail = () => {
           alt={movieDetail.title}
           className="w-full h-96 object-cover"
         />
-        <div className="absolute top-1/2 sm:left-1/2 lg:left-96 transform -translate-x-1/2 -translate-y-1/2 w-full lg:w-3/6 text-center lg:text-left px-4">
+        <div className="absolute top-1/2 left-1/2 lg:left-96 transform -translate-x-1/2 -translate-y-1/2 w-full lg:w-3/6 text-center lg:text-left px-4">
           <h1 className="text-pink-300 text-4xl font-bold mb-4 lg:mb-8  border-gray-900">
             {movieDetail.title}
           </h1>
